@@ -2,7 +2,7 @@ import express, { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
 import { createUser, deleteUser, getAllUsers, getUserById, updateUser } from "../controllers/usersController";
 
-const JWT_SECRET = process.env.JWT_SECRET || "secret-default";
+const JWT_SECRET = process.env.JWT_SECRET || "default_key";
 const router = express.Router();
 
 // Middleware
